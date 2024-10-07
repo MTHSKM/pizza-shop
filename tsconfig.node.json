@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "composite": true, // Habilitar composite para permitir referências
+    "target": "ES2022", // Alvo do código
+    "lib": ["ES2023"], // Bibliotecas a serem incluídas
+    "module": "ESNext", // Tipo de módulo
+    "skipLibCheck": true, // Ignorar checagem de tipos em arquivos de definição
+
+    /* Bundler mode */
+    "moduleResolution": "bundler", // Resolução de módulo
+    "allowImportingTsExtensions": true, // Permitir importações com extensões TypeScript
+    "isolatedModules": true, // Módulos isolados
+    "moduleDetection": "force", // Detecção de módulo
+    "noEmit": true, // Não emitir arquivos de saída
+
+    /* Linting */
+    "strict": true, // Habilitar verificações estritas
+    "noUnusedLocals": true, // Erro se houver variáveis locais não utilizadas
+    "noUnusedParameters": true, // Erro se houver parâmetros não utilizados
+    "noFallthroughCasesInSwitch": true // Erro para casos de queda em switch
+  },
+  "include": ["vite.config.ts"] // Arquivos incluídos
+}
